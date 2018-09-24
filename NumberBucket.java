@@ -26,4 +26,8 @@ public class NumberBucket {
         int slot = randomGen.nextInt(bucket.size());
         return bucket.get(slot);
     }
+
+    public int getSize() {
+	return bucket.size();
+    }
 }
