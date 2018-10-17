@@ -25,6 +25,11 @@ public class BucketTest {
 		assertEquals("initial size of test", 2, testObj.getSize());
 	}
 
+        @Test
+	public void testEmptyAverage() {
+	    assertEquals("mean", 0.0, emptyObj.average(), 0.0001);
+	}
+
 	@Test
 	public void testAverage() {
 		int first = 10;
